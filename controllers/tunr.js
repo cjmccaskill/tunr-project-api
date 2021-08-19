@@ -4,7 +4,7 @@ const router = Router();
 const Songs = require("../models/tunr");
 
 router.get("/", async (req, res) => {
-  res.json(await Songs.find({}).catch((err) => res.status(400).json(err));
+  res.json(await Songs.find({}).catch((err) => res.status(400).json(err)));
 });
 
 router.post("/", async (req, res) => {
